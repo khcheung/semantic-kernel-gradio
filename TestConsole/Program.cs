@@ -2,9 +2,11 @@
 using Microsoft.SemanticKernel.AI.Embeddings;
 using Simple.SemanticKernel.Connectors.Gradio;
 
+namespace TestConsole;
+
 public class Program
 {
-    public  static async Task Main(string[] args)
+    public  static async Task Main()
     {
         var builder = new KernelBuilder();
         builder.WithGradioEmbeddingGenerationService("https://alexkhcheung-embeddingtest.hf.space/", 0, setAsDefault: true);

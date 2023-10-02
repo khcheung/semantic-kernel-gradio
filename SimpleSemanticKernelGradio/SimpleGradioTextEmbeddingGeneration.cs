@@ -8,9 +8,9 @@ namespace Simple.SemanticKernel.Connectors.Gradio
 {
     public class SimpleGradioTextEmbeddingGeneration : ITextEmbeddingGeneration
     {
-        private String mEndPoint = null;
-        private int mFnIndex = -1;
-        private Simple.GradioClient.Client mClient = null;
+        private readonly String mEndPoint = null!;
+        private readonly int mFnIndex = -1;
+        private Simple.GradioClient.Client mClient = null!;
 
         public SimpleGradioTextEmbeddingGeneration(String endpoint, Int32 fnIndex)
         {
@@ -20,10 +20,7 @@ namespace Simple.SemanticKernel.Connectors.Gradio
 
         private Simple.GradioClient.Client GetClient()
         {
-            if (this.mClient == null)
-            {
-                this.mClient = new GradioClient.Client(new Uri(mEndPoint));
-            }
+            this.mClient ??= new GradioClient.Client(new Uri(mEndPoint));
             return this.mClient;
         }
 
