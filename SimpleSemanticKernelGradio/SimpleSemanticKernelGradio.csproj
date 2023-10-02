@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Simple.SemanticKernel.Connectors.Gradio</RootNamespace>
-    <Version>0.24.230918-alpha-001</Version>
+    <Version>0.24.230918-alpha-002</Version>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
@@ -11,6 +11,12 @@
     <FileVersion>0.24</FileVersion>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageProjectUrl>https://github.com/khcheung/semantic-kernel-gradio/</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/khcheung/semantic-kernel-gradio/</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <AssemblyName>Simple.SemanticKernel.Connectors.Gradio</AssemblyName>
+    <Title>Simple Gradio API Connector for Semantic Kernel Text Embedding</Title>
+    <Description>Simple Connect to a Gradio.App that accept single text in and vector out for Text Embedding.</Description>
   </PropertyGroup>
 
   <ItemGroup>
